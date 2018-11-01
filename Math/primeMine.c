@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "core.h"
+#include "core.c"
 int main(int argc, char *argv[]){
     int max;
     char *filename;

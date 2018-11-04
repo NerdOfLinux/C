@@ -1,6 +1,6 @@
 #include "core.h"
 #include <math.h>
-//Create is_factor function
+// Create is_factor function
 int is_factor( int factor1, int factor2, int num ){
   if ( factor1 * factor2 == num ) {
         return 1;
@@ -8,7 +8,7 @@ int is_factor( int factor1, int factor2, int num ){
         return 0;
     }
 }
-//Create is_prime function
+// Create is_prime function
 int is_prime( int num ) {
   int i;
   int max;
@@ -19,8 +19,8 @@ int is_prime( int num ) {
       return 1;
     }
 
-  // There is no point in checkin factors above the square root of the number
-  // To prevet false positives, it's easiest to just add 1 to the square root due to rounding
+  // There is no point in checking factors above the square root of the number
+  // To prevent false positives, it's easiest to just add 1 to the square root due to rounding
   max = sqrt( num ) + 1;
   for ( i = 2; i < max; i++ ) {
     // Return false the instant a factor is found

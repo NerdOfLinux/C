@@ -1,5 +1,6 @@
 #include "core.h"
 #include <math.h>
+
 // Create is_factor function
 int is_factor( int factor1, int factor2, int num ){
   if ( factor1 * factor2 == num ) {
